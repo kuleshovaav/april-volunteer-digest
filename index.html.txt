@@ -1,0 +1,201 @@
+<!DOCTYPE html><html lang="ru"><head>
+            <title data-id="th-modified">Web Page</title>
+            
+          <meta property="og:title" content="Web Page" data-id="th-modified"><meta name="description" content="code" data-id="th-modified"><meta property="og:description" content="code" data-id="th-modified"><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified"><meta property="og:url" content="https://volunteer-april-digest-mephi.tiiny.site/" data-id="th-modified"><meta property="og:type" content="website" data-id="th-modified"><script defer="" data-domain="volunteer-april-digest-mephi.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
+          <body>
+            
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дайджест ВЦ МИФИ — Апрель</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #5c6bc0;
+            --accent: #ff80ab;
+            --bg: #f8f9fa;
+            --text: #2d3436;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin: 0;
+            color: var(--text);
+            letter-spacing: -1px;
+        }
+
+        .subtitle {
+            color: #636e72;
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+
+        .section-title {
+            display: flex;
+            align-items: center;
+            font-weight: 800;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 30px 0 20px;
+            color: var(--primary);
+        }
+
+        .section-title span {
+            margin-right: 10px;
+        }
+
+        .event-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .event-card {
+            background: #f1f3f9;
+            margin-bottom: 12px;
+            padding: 16px;
+            border-radius: 16px;
+            transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .event-card:hover {
+            transform: translateY(-3px);
+            background: #e8ebf5;
+        }
+
+        .date {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .recommend-list .event-card {
+            border-left: 4px solid var(--accent);
+        }
+
+        .footer {
+            margin-top: 40px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+
+        .btn-tg {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: opacity 0.2s;
+        }
+
+        .btn-tg:hover {
+            opacity: 0.9;
+        }
+
+        .hashtag {
+            color: #b2bec3;
+            font-size: 0.8rem;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 480px) {
+            .container { padding: 20px; }
+            h1 { font-size: 1.5rem; }
+        }
+    </style>
+
+
+
+<div class="container">
+    <header>
+        <h1>ДАЙДЖЕСТ НА АПРЕЛЬ 🌸</h1>
+        <p class="subtitle">Весна в самом разгаре — время добавить добро в свое расписание!</p>
+    </header>
+
+    <div class="section-title"><span>👐</span> Марафон добрых дел</div>
+    <div class="event-list">
+      
+        <a href="https://it.mephi.ru/webform/3135" class="event-card">
+            <span class="date">15.04</span>
+            <span class="title">Поездка в школу-интернат «Барсуки»</span>
+        </a>
+        <a href="https://it.mephi.ru/webform/3175" class="event-card">
+            <span class="date">19.04</span>
+            <span class="title">День открытых дверей МИФИ</span>
+        </a>
+        <a href="https://it.mephi.ru/webform/3165" class="event-card">
+            <span class="date">19.04</span>
+            <span class="title">Поездка в дом престарелых</span>
+        </a>
+        
+        <a href="https://it.mephi.ru/webform/3182" class="event-card">
+            <span class="date">26.04</span>
+            <span class="title">Московский полумарафон</span>
+        </a>
+        <div class="event-card">
+            <span class="date">27.04</span>
+            <span class="title">День Донора</span>
+        </div>
+    </div>
+
+    <div class="section-title"><span>🖇</span> Мы советуем</div>
+    <div class="event-list recommend-list">
+      
+        <a href="https://t.me/ecomephi/384" class="event-card">
+            <span class="date">Весь апрель</span>
+            <span class="title">Месяц Земли от ЭкоМИФИ</span>
+        </a>
+    </div>
+
+    <div class="footer">
+        <p>Следите за обновлениями в наших соцсетях</p>
+        <a href="https://t.me/vcmephi" class="btn-tg">Волонтёрский центр МИФИ</a>
+        <div class="hashtag">#ДайджестВЦ</div>
+    </div>
+</div>
+
+
+
+          
+        </body></html>
