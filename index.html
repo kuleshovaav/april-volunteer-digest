@@ -1,15 +1,10 @@
-<!DOCTYPE html><html lang="ru"><head>
-            <title data-id="th-modified">Web Page</title>
-            
-          <meta property="og:title" content="Web Page" data-id="th-modified"><meta name="description" content="code" data-id="th-modified"><meta property="og:description" content="code" data-id="th-modified"><meta property="og:image" content="https://tiiny.host/assets/logo-purple-bg.png" data-id="th-modified"><meta property="og:url" content="https://volunteer-april-digest-mephi.tiiny.site/" data-id="th-modified"><meta property="og:type" content="website" data-id="th-modified"><script defer="" data-domain="volunteer-april-digest-mephi.tiiny.site" src="https://analytics.tiiny.site/js/plausible.js"></script><script type="text/javascript" src="https://tiiny.host/ad-script.js"></script></head>
-          <body>
-            
-
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дайджест ВЦ МИФИ — Апрель</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #5c6bc0;
@@ -17,6 +12,7 @@
             --bg: #f8f9fa;
             --text: #2d3436;
             --white: #ffffff;
+            --secondary-text: #636e72;
         }
 
         body {
@@ -31,171 +27,206 @@
         }
 
         .container {
-            max-width: 600px;
+            max-width: 650px;
             width: 100%;
             background: var(--white);
             padding: 40px;
             border-radius: 24px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            box-sizing: border-box;
         }
 
         header {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
 
         h1 {
             font-size: 2rem;
             margin: 0;
-            color: var(--text);
             letter-spacing: -1px;
+            color: var(--text);
         }
 
-        .subtitle {
-            color: #636e72;
-            font-size: 0.9rem;
-            margin-top: 10px;
+        .intro-card {
+            background: #f0f2f9;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--primary);
+        }
+
+        .intro-card p {
+            margin: 0;
+            font-size: 1.05rem;
+            color: #444;
         }
 
         .section-title {
             display: flex;
             align-items: center;
             font-weight: 800;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin: 30px 0 20px;
+            margin: 40px 0 20px;
             color: var(--primary);
         }
 
-        .section-title span {
-            margin-right: 10px;
-        }
-
         .event-list {
-            list-style: none;
-            padding: 0;
+            display: grid;
+            gap: 15px;
         }
 
         .event-card {
-            background: #f1f3f9;
-            margin-bottom: 12px;
-            padding: 16px;
-            border-radius: 16px;
-            transition: transform 0.2s;
-            display: flex;
-            flex-direction: column;
+            background: #fff;
+            border: 1px solid #edf2f7;
+            padding: 20px;
+            border-radius: 18px;
             text-decoration: none;
             color: inherit;
+            transition: all 0.2s ease;
+            display: block;
         }
 
         .event-card:hover {
             transform: translateY(-3px);
-            background: #e8ebf5;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-color: var(--primary);
         }
 
-        .date {
-            font-weight: 600;
-            font-size: 0.85rem;
-            color: var(--primary);
-            margin-bottom: 4px;
-        }
-
-        .title {
-            font-weight: 600;
-            font-size: 1rem;
-        }
-
-        .recommend-list .event-card {
-            border-left: 4px solid var(--accent);
-        }
-
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        .btn-tg {
+        .date-badge {
             display: inline-block;
             background: var(--primary);
             color: white;
-            padding: 12px 24px;
+            padding: 4px 12px;
             border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-            transition: opacity 0.2s;
-        }
-
-        .btn-tg:hover {
-            opacity: 0.9;
-        }
-
-        .hashtag {
-            color: #b2bec3;
             font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .event-title {
+            font-weight: 700;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .event-desc {
+            font-size: 0.95rem;
+            color: var(--secondary-text);
+            margin: 0;
+        }
+
+        .bonus-block {
+            background: linear-gradient(135deg, #fff5f8 0%, #ffe4ec 100%);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 40px;
+            border: 1px dashed var(--accent);
+        }
+
+        .bonus-title {
+            color: var(--accent);
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        .footer {
+            margin-top: 50px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding-top: 30px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
             margin-top: 15px;
         }
 
+        .btn {
+            padding: 12px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: 0.2s;
+        }
+
+        .btn-tg { background: #0088cc; color: white; }
+        .btn-vk { background: #0077ff; color: white; }
+        .btn:hover { opacity: 0.8; }
+
         @media (max-width: 480px) {
             .container { padding: 20px; }
-            h1 { font-size: 1.5rem; }
+            h1 { font-size: 1.6rem; }
         }
     </style>
-
-
+</head>
+<body>
 
 <div class="container">
     <header>
         <h1>ДАЙДЖЕСТ НА АПРЕЛЬ 🌸</h1>
-        <p class="subtitle">Весна в самом разгаре — время добавить добро в свое расписание!</p>
     </header>
 
-    <div class="section-title"><span>👐</span> Марафон добрых дел</div>
+    <div class="intro-card">
+        <p>Привет, студент! 👋<br><br>
+        Не знаешь, чем занять выходные? Волонтёрство — это способ увидеть МИФИ с другой стороны, познакомиться с новыми людьми и реально помочь. А ещё — повод выйти на улицу, пока весна в самом разгаре!</p>
+    </div>
+
+    <div class="section-title">✨ Куда пойти волонтёром</div>
+    
     <div class="event-list">
-      
-        <a href="https://it.mephi.ru/webform/3135" class="event-card">
-            <span class="date">15.04</span>
-            <span class="title">Поездка в школу-интернат «Барсуки»</span>
+        <a href="https://it.mephi.ru/webform/3135" target="_blank" class="event-card">
+            <span class="date-badge">15.04</span>
+            <span class="event-title">Поездка в Барсуковскую школу-интернат</span>
+            <p class="event-desc">Проведи день с детьми, для которых твоё внимание и общение — настоящий праздник и тёплое воспоминание надолго.</p>
         </a>
-        <a href="https://it.mephi.ru/webform/3175" class="event-card">
-            <span class="date">19.04</span>
-            <span class="title">День открытых дверей МИФИ</span>
+
+        <a href="https://it.mephi.ru/webform/3175" target="_blank" class="event-card">
+            <span class="date-badge">19.04</span>
+            <span class="event-title">День открытых дверей НИЯУ МИФИ</span>
+            <p class="event-desc">Помоги будущим мифистам найти свой путь и поделись опытом из первых уст.</p>
         </a>
-        <a href="https://it.mephi.ru/webform/3165" class="event-card">
-            <span class="date">19.04</span>
-            <span class="title">Поездка в дом престарелых</span>
+
+        <a href="https://it.mephi.ru/webform/3165" target="_blank" class="event-card">
+            <span class="date-badge">19.04</span>
+            <span class="event-title">Поездка в дом престарелых</span>
+            <p class="event-desc">Место, где всегда рады гостям. Твоя улыбка и простые разговоры — то, чего очень не хватает пожилым людям.</p>
         </a>
-        
-        <a href="https://it.mephi.ru/webform/3182" class="event-card">
-            <span class="date">26.04</span>
-            <span class="title">Московский полумарафон</span>
+
+        <a href="https://it.mephi.ru/webform/3182" target="_blank" class="event-card">
+            <span class="date-badge">26.04</span>
+            <span class="event-title">Московский полумарафон</span>
+            <p class="event-desc">Стань частью крупного городского события, зарядись атмосферой и поддержи бегунов из МИФИ!</p>
         </a>
+
         <div class="event-card">
-            <span class="date">27.04</span>
-            <span class="title">День Донора</span>
+            <span class="date-badge">27.04</span>
+            <span class="event-title">День Донора НИЯУ МИФИ</span>
+            <p class="event-desc">Помоги совершить добрый поступок и спасти чью-то жизнь. Совсем скоро откроем набор волонтеров!</p>
         </div>
     </div>
 
-    <div class="section-title"><span>🖇</span> Мы советуем</div>
-    <div class="event-list recommend-list">
-      
-        <a href="https://t.me/ecomephi/384" class="event-card">
-            <span class="date">Весь апрель</span>
-            <span class="title">Месяц Земли от ЭкоМИФИ</span>
-        </a>
+    <div class="bonus-block">
+        <span class="bonus-title">🎁 О приятном!</span>
+        <p style="margin: 0; font-size: 0.95rem;">Для активных волонтёров мы подготовили поощрения: от блокнотов до <b>худи и повербанков</b>. Чем больше участвуешь — тем круче награда!</p>
     </div>
 
     <div class="footer">
-        <p>Следите за обновлениями в наших соцсетях</p>
-        <a href="https://t.me/vcmephi" class="btn-tg">Волонтёрский центр МИФИ</a>
-        <div class="hashtag">#ДайджестВЦ</div>
+        <p>Подписывайся, чтобы не пропустить наборы:</p>
+        <div class="social-links">
+            <a href="https://t.me/vcmephi" target="_blank" class="btn btn-tg">Telegram</a>
+            <a href="https://vk.ru/vcmephi" target="_blank" class="btn btn-vk">ВКонтакте</a>
+        </div>
+        <p style="color: #b2bec3; font-size: 0.8rem; margin-top: 20px;">#ДайджестВЦ</p>
     </div>
 </div>
 
-
-
-          
-        </body></html>
+</body>
+</html>
